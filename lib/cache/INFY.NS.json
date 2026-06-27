@@ -1,0 +1,50 @@
+{
+  "identity": {
+    "name": "Infosys Limited",
+    "ticker": "INFY.NS",
+    "exchange": "NSE",
+    "sector": "Technology",
+    "industry": "Information Technology Services",
+    "description": "Infosys Limited, together with its subsidiaries, provides consulting, technology, outsourcing, and next-generation digital services in North America, Europe, India, and internationally.",
+    "currency": "INR"
+  },
+  "financials": {
+    "marketCap": 6800000000000,
+    "peRatio": 28.5,
+    "pbRatio": 8.2,
+    "revenue": 1630000000000,
+    "revenueGrowthYoY": 8.2,
+    "netIncome": 265000000000,
+    "grossMargin": 31.5,
+    "netMargin": 16.3,
+    "returnOnEquity": 32.1,
+    "debtToEquity": 0.1,
+    "currentRatio": 2.1,
+    "freeCashFlow": 210000000000,
+    "sectorAverages": {
+      "peRatio": 24.2,
+      "netMargin": 14.5,
+      "debtToEquity": 0.5
+    },
+    "source": "Financial Modeling Prep (Cached)",
+    "dataAsOf": "2024-05-15T00:00:00.000Z"
+  },
+  "news": {
+    "items": [
+      {
+        "headline": "Infosys wins $1.5 billion deal from global telecom firm",
+        "summary": "Infosys has secured a major long-term contract to modernize IT infrastructure...",
+        "source": "economictimes.indiatimes.com",
+        "sentiment": "positive"
+      },
+      {
+        "headline": "IT sector faces margin pressure amidst wage hikes",
+        "summary": "Indian IT firms, including Infosys and TCS, are navigating margin headwinds.",
+        "source": "livemint.com",
+        "sentiment": "negative"
+      }
+    ],
+    "overallSentiment": "neutral",
+    "source": "Tavily Search (Cached)"
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "identity": {
+    "name": "Zomato Limited",
+    "ticker": "ZOMATO.NS",
+    "exchange": "NSE",
+    "sector": "Consumer Cyclical",
+    "industry": "Restaurants",
+    "description": "Zomato Limited operates as an online food delivery company. The company’s technology platform connects customers, restaurant partners, and delivery partners.",
+    "currency": "INR"
+  },
+  "financials": {
+    "marketCap": 1800000000000,
+    "peRatio": 125.4,
+    "pbRatio": 8.9,
+    "revenue": 121000000000,
+    "revenueGrowthYoY": 71.5,
+    "netIncome": 3500000000,
+    "grossMargin": 42.1,
+    "netMargin": 2.9,
+    "returnOnEquity": 1.7,
+    "debtToEquity": 0.05,
+    "currentRatio": 3.2,
+    "freeCashFlow": 4100000000,
+    "sectorAverages": {
+      "peRatio": 45.2,
+      "netMargin": 5.1,
+      "debtToEquity": 0.9
+    },
+    "source": "Financial Modeling Prep (Cached)",
+    "dataAsOf": "2024-05-15T00:00:00.000Z"
+  },
+  "news": {
+    "items": [
+      {
+        "headline": "Zomato posts profitable quarter, stock surges",
+        "summary": "Zomato reported another quarter of profitability driven by strong Blinkit performance.",
+        "source": "businesstoday.in",
+        "sentiment": "positive"
+      }
+    ],
+    "overallSentiment": "positive",
+    "source": "Tavily Search (Cached)"
+  }
+}

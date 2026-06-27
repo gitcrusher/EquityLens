@@ -1,0 +1,56 @@
+{
+  "identity": {
+    "name": "Apple Inc.",
+    "ticker": "AAPL",
+    "exchange": "NASDAQ",
+    "sector": "Technology",
+    "industry": "Consumer Electronics",
+    "description": "Apple Inc. designs, manufactures, and markets smartphones, personal computers, tablets, wearables, and accessories worldwide.",
+    "currency": "USD"
+  },
+  "financials": {
+    "marketCap": 2984000000000,
+    "peRatio": 31.5,
+    "pbRatio": 42.1,
+    "revenue": 383285000000,
+    "revenueGrowthYoY": -2.8,
+    "netIncome": 96995000000,
+    "grossMargin": 44.1,
+    "netMargin": 25.3,
+    "returnOnEquity": 171.9,
+    "debtToEquity": 1.7,
+    "currentRatio": 0.99,
+    "freeCashFlow": 99584000000,
+    "sectorAverages": {
+      "peRatio": 28.4,
+      "netMargin": 18.2,
+      "debtToEquity": 1.1
+    },
+    "source": "Financial Modeling Prep (Cached)",
+    "dataAsOf": "2024-05-15T00:00:00.000Z"
+  },
+  "news": {
+    "items": [
+      {
+        "headline": "Apple unveils new AI features at WWDC",
+        "summary": "Apple announced significant updates to iOS, bringing generative AI to iPhones...",
+        "source": "bloomberg.com",
+        "sentiment": "positive"
+      },
+      {
+        "headline": "iPhone sales in China drop 19% in Q1",
+        "summary": "Apple faces tough competition from Huawei in the key Chinese market.",
+        "source": "cnbc.com",
+        "sentiment": "negative"
+      },
+      {
+        "headline": "Apple Vision Pro sales slowing down",
+        "summary": "Initial enthusiasm for the headset seems to have cooled off.",
+        "source": "theverge.com",
+        "sentiment": "neutral"
+      }
+    ],
+    "overallSentiment": "neutral",
+    "source": "Tavily Search (Cached)"
+  }
+}

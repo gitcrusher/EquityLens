@@ -1,0 +1,44 @@
+{
+  "identity": {
+    "name": "Tesla, Inc.",
+    "ticker": "TSLA",
+    "exchange": "NASDAQ",
+    "sector": "Consumer Cyclical",
+    "industry": "Auto Manufacturers",
+    "description": "Tesla, Inc. designs, develops, manufactures, leases, and sells electric vehicles, and energy generation and storage systems.",
+    "currency": "USD"
+  },
+  "financials": {
+    "marketCap": 580000000000,
+    "peRatio": 68.5,
+    "pbRatio": 10.2,
+    "revenue": 96770000000,
+    "revenueGrowthYoY": 18.8,
+    "netIncome": 14990000000,
+    "grossMargin": 18.2,
+    "netMargin": 15.5,
+    "returnOnEquity": 28.1,
+    "debtToEquity": 0.4,
+    "currentRatio": 1.5,
+    "freeCashFlow": 4300000000,
+    "sectorAverages": {
+      "peRatio": 15.2,
+      "netMargin": 8.5,
+      "debtToEquity": 1.5
+    },
+    "source": "Financial Modeling Prep (Cached)",
+    "dataAsOf": "2024-05-15T00:00:00.000Z"
+  },
+  "news": {
+    "items": [
+      {
+        "headline": "Tesla cuts prices across key markets",
+        "summary": "Tesla has reduced vehicle prices globally in an effort to boost demand.",
+        "source": "reuters.com",
+        "sentiment": "negative"
+      }
+    ],
+    "overallSentiment": "negative",
+    "source": "Tavily Search (Cached)"
+  }
+}

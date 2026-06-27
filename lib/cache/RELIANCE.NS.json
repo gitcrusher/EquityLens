@@ -1,0 +1,44 @@
+{
+  "identity": {
+    "name": "Reliance Industries Limited",
+    "ticker": "RELIANCE.NS",
+    "exchange": "NSE",
+    "sector": "Energy",
+    "industry": "Oil & Gas Refining & Marketing",
+    "description": "Reliance Industries Limited engages in hydrocarbon exploration and production, oil and gas refining and marketing, petrochemicals, retail, and digital services businesses worldwide.",
+    "currency": "INR"
+  },
+  "financials": {
+    "marketCap": 19500000000000,
+    "peRatio": 28.2,
+    "pbRatio": 2.5,
+    "revenue": 9000000000000,
+    "revenueGrowthYoY": 2.6,
+    "netIncome": 696000000000,
+    "grossMargin": 30.1,
+    "netMargin": 7.7,
+    "returnOnEquity": 8.9,
+    "debtToEquity": 0.4,
+    "currentRatio": 1.1,
+    "freeCashFlow": 310000000000,
+    "sectorAverages": {
+      "peRatio": 12.5,
+      "netMargin": 6.2,
+      "debtToEquity": 0.8
+    },
+    "source": "Financial Modeling Prep (Cached)",
+    "dataAsOf": "2024-05-15T00:00:00.000Z"
+  },
+  "news": {
+    "items": [
+      {
+        "headline": "Reliance Jio reports strong Q4 subscriber additions",
+        "summary": "Reliance's telecom arm continues to dominate the Indian market with robust growth.",
+        "source": "moneycontrol.com",
+        "sentiment": "positive"
+      }
+    ],
+    "overallSentiment": "positive",
+    "source": "Tavily Search (Cached)"
+  }
+}
