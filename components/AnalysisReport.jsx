@@ -1,6 +1,7 @@
 "use client";
 
 import { formatCurrency, formatPercent, formatRatio } from "../lib/format.js";
+import PriceChart from "./PriceChart";
 
 // ─── Helpers ──────────────────────
 function signalIcon(result) {
@@ -188,6 +189,10 @@ export default function AnalysisReport({ analysis, onNewSearch }) {
             );
           })()}
         </div>
+      )}
+
+      {financials && financials.historical && financials.historical.length > 0 && (
+        <PriceChart data={financials.historical} currency={currency} />
       )}
 
       {/* ════════════════════════════════════ */}
