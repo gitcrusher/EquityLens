@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import SearchHero from "./SearchHero";
 import LoadingStepper from "./LoadingStepper";
 import DisambiguationCards from "./DisambiguationCards";
@@ -16,6 +16,31 @@ export default function ClientApp() {
   const [viewState, setViewState] = useState("idle");
   const [currentData, setCurrentData] = useState(null);
   const [errorMsg, setErrorMsg] = useState(null);
+
+  // Handle browser back/forward buttons
+  useEffect(() => {
+    const handlePopState = (e) => {
+      if (e.state && e.state.viewState) {
+        setViewState(e.state.viewState);
+        setCurrentData(e.state.currentData);
+        setErrorMsg(e.state.errorMsg);
+      } else {
+        setViewState("idle");
+        setCurrentData(null);
+        setErrorMsg(null);
+      }
+    };
+    window.addEventListener("popstate", handlePopState);
+    return () => window.removeEventListener("popstate", handlePopState);
+  }, []);
+
+  const navigateTo = (stateObj) => {
+    setViewState(stateObj.viewState);
+    setCurrentData(stateObj.currentData);
+    setErrorMsg(stateObj.errorMsg);
+    // Push the state to the browser history
+    window.history.pushState(stateObj, "");
+  };
 
   /**
    * Primary action handler triggered by the SearchHero or Disambiguation cards.
@@ -39,30 +64,25 @@ export default function ClientApp() {
       const result = await response.json();
 
       if (!response.ok || result.type === "error") {
-        setViewState("error");
-        setErrorMsg(result.message || "An unexpected error occurred. Please try again.");
+        navigateTo({ viewState: "error", errorMsg: result.message || "An unexpected error occurred. Please try again.", currentData: null });
         return;
       }
 
       if (result.type === "disambiguation") {
-        setViewState("disambiguation");
-        setCurrentData(result.matches);
+        navigateTo({ viewState: "disambiguation", currentData: result.matches, errorMsg: null });
         return;
       }
 
       if (result.type === "result") {
-        setViewState("result");
-        setCurrentData(result.analysis);
+        navigateTo({ viewState: "result", currentData: result.analysis, errorMsg: null });
         return;
       }
 
       // Fallback if API returns an unknown schema type
-      setViewState("error");
-      setErrorMsg("Received an invalid response format from the server.");
+      navigateTo({ viewState: "error", errorMsg: "Received an invalid response format from the server.", currentData: null });
     } catch (err) {
       console.error("Fetch error:", err);
-      setViewState("error");
-      setErrorMsg("Network error. Please check your connection and try again.");
+      navigateTo({ viewState: "error", errorMsg: "Network error. Please check your connection and try again.", currentData: null });
     }
   };
 
@@ -70,9 +90,7 @@ export default function ClientApp() {
    * Helper to reset the application back to the initial state.
    */
   const handleReset = () => {
-    setViewState("idle");
-    setCurrentData(null);
-    setErrorMsg(null);
+    navigateTo({ viewState: "idle", currentData: null, errorMsg: null });
   };
 
   // ---------------------------------------------------------------------------
