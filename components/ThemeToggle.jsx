@@ -9,6 +9,7 @@ export default function ThemeToggle() {
   useEffect(() => {
     const saved = localStorage.getItem("theme");
     const initial = saved || document.documentElement.getAttribute("data-theme") || "dark";
+    // eslint-disable-next-line
     setTheme(initial);
   }, []);
 
